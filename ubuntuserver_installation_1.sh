@@ -21,31 +21,22 @@ sudo apt upgrade -y
 echo ""
 title_red "Instalação - Parte 1"
 
-sleep 5
-
-echo ""
 title_blue "Instalando dependências necessárias..."
 
-sudo apt install build-essential unzip git neofetch curl wget net-tools btop python3-venv python3-pip dkms perl gcc make default-libmysqlclient-dev libssl-dev zlib1g-dev libbz2-dev libreadline-dev unzip libsqlite3-dev llvm xz-utils tk-dev libffi-dev liblzma-dev python3-openssl bat ruby-full nodejs npm fzf neovim -y
-
-sleep 5
+sudo apt install build-essential unzip git neofetch curl wget python3.12-venv net-tools btop python3-venv python3-pip dkms perl gcc make default-libmysqlclient-dev libssl-dev zlib1g-dev libbz2-dev libreadline-dev unzip libsqlite3-dev llvm xz-utils tk-dev libffi-dev liblzma-dev python3-openssl bat ruby-full nodejs npm fzf neovim btop -y
 
 sudo timedatectl set-timezone America/Sao_Paulo
 mkdir -p ~/Downloads
 mkdir -p ~/scripts
 mkdir -p ~/repos
 
-echo ""
 title_blue "Alterando o shell padrão bash para o zsh."
-echo ""
-title_blue "Certifique-se de digitar corretamente a senha."
 
-sleep 5
+title_blue "Certifique-se de digitar corretamente a senha."
 
 read -p "Pressione ENTER para confirmar e prosseguir."
 
-sudo nala install zsh -y
+sudo apt install zsh -y
 chsh -s /usr/bin/zsh
 
-echo ""
 read -p "Pressione ENTER para confirmar e sair."

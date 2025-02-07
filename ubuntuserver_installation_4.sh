@@ -11,7 +11,6 @@ title_blue() {
     echo -e "\033[34m$(toilet --font pagga --filter border --width 200 "$1")\033[0m"
 }
 
-echo ""
 title_red "Instalação - Parte 4"
 
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
@@ -24,8 +23,4 @@ cp ~/repos/UbuntuServer/customization/bash/.bash_aliases ~
 cp ~/repos/UbuntuServer/customization/zsh/.zshrc ~
 cp ~/repos/UbuntuServer/customization/zsh/.zsh_aliases ~
 
-echo ""
-title_blue "Shells personalizados."
-
-echo ""
 read -p "Pressione ENTER para confirmar e sair."
