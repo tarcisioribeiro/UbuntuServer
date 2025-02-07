@@ -18,7 +18,6 @@ echo ""
 title_blue "Instalando pacotes através do brew..."
 
 brew install eza glow tldr fd git-delta zoxide
-nvm install 20.17.0
 
 echo ""
 title_green "Instalação Finalizada."

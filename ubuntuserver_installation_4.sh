@@ -21,6 +21,8 @@ mv ~/.config/nvim ~/.config/nvim_old
 cp -r ~/repos/UbuntuServer/customization/nvim ~/.config
 cp ~/repos/UbuntuServer/customization/bash/.bashrc ~
 cp ~/repos/UbuntuServer/customization/bash/.bash_aliases ~
+cp ~/repos/UbuntuServer/customization/zsh/.zshrc ~
+cp ~/repos/UbuntuServer/customization/zsh/.zsh_aliases ~
 
 echo ""
 title_blue "Shells personalizados."

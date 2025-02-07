@@ -15,7 +15,7 @@ echo ""
 title_red "Instalação - Parte 2"
 
 echo ""
-title_blue "Instalando o OH-My-Zsh.."
+title_blue "Instalando o OH My ZSH"
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -31,8 +31,6 @@ cd ~/repos
 git clone https://github.com/tarcisioribeiro/ExpenseLit.git
 git clone https://github.com/tarcisioribeiro/StreamFort.git
 
-cp ~/repos/UbuntuServer/customization/zsh/.zshrc ~
-cp ~/repos/UbuntuServer/customization/zsh/.zsh_aliases ~
 cp ~/repos/UbuntuServer/customization/git/.gitconfig ~
 cp ~/repos/UbuntuServer/customization/tmux/.tmux.conf ~
 mkdir -p ~/.config/autostart
@@ -52,13 +50,6 @@ sudo cp logo-ls /usr/local/bin
 cd ~/Downloads
 rm logo-ls_Linux_x86_64.tar.gz
 sudo rm -r logo-ls_Linux_x86_64/
-
-sudo nala remove libmagickcore-6.q16-6 imagemagick-6.q16 imagemagick-6-common imagemagick idle-python3.10 -y
-
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
-rm nvim-linux64.tar.gz
 
 echo ""
 read -p "Pressione ENTER para confirmar e sair."

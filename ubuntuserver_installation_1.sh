@@ -24,16 +24,9 @@ title_red "Instalação - Parte 1"
 sleep 5
 
 echo ""
-title_blue "Instalando o gerenciador de pacotes Nala..."
-
-sudo apt install nala build-essential -y
-
-sleep 5
-
-echo ""
 title_blue "Instalando dependências necessárias..."
 
-sudo nala install build-essential unzip git neofetch curl wget net-tools btop python3-venv python3-pip python3.10-full python3.10-dev dkms perl gcc make default-libmysqlclient-dev libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncurses5-dev libncursesw5-dev llvm xz-utils tk-dev libffi-dev liblzma-dev python3-openssl bat ruby-full nodejs npm fzf -y
+sudo apt install build-essential unzip git neofetch curl wget net-tools btop python3-venv python3-pip dkms perl gcc make default-libmysqlclient-dev libssl-dev zlib1g-dev libbz2-dev libreadline-dev unzip libsqlite3-dev llvm xz-utils tk-dev libffi-dev liblzma-dev python3-openssl bat ruby-full nodejs npm fzf neovim -y
 
 sleep 5
 
